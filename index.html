@@ -1,0 +1,37 @@
+<html lang="en"> 
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <title>CodeDay - Nametags</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,500' rel='stylesheet' type='text/css'>
+        <script src="http://labelwriter.com/software/dls/sdk/js/DYMO.Label.Framework.latest.js" type="text/javascript" charset="UTF-8"> </script>
+        <script src="assets/xml.js" type="text/javascript" charset="UTF-8"> </script>
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body>
+        <div class="outer">
+            <div class="middle">
+                <div class="row">
+                    <header>
+        			 <img src="assets/logo.png" />
+                    </header>
+                    <form>
+                    <input id="fullName" type="text" autofocus="true" maxlength="21" autocomplete="off" placeholder="Full Name"/> is a
+                    <select type="select" id="typeName" name="person">
+                        <option value="Participant">Participant</option>
+                        <option value="Teacher">Teacher</option>
+                        <option value="Visitor">Visitor</option>
+                        <option value="Sponsor">Sponsor</option>
+                        <option value="Volunteer">Volunteer</option>
+                    </select>
+                        <button id="btn" type="submit">Print</button>
+                    </form>     
+                    <footer>
+                        <p>You'll need <a target="_blank" href="http://www.dymo.com/en-US/labelwriter-450-label-printer#tabContainer">DYMO Software</a> and the <a target="_blank" href="fonts/ProximaNova-Regular.otf">font files</a>.</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <embed type="application/x-npapi-dymolabel" id="_DymoLabelFrameworkJslPlugin" width="1" height="1" hidden="">
+    </body>
+</html>

@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  outline: none;
+  border: none; 
+}
+
+input, button, select, textarea {
+  font: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; 
+  font-size: 15px;
+}
+
+html {
+  height: 100%;
+  color: #3d464d;
+  font-family: "OpenSans", "Helvetica Neue", Arial, sans-serif;
+  font-weight:450;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  padding: 10px; 
+}
+
+body {
+	background-color: #fff;
+	height: 100%; 
+}
+
+.outer {
+	display: table; 
+	position: absolute; 
+	height: 100%; 
+	width: 100%;
+}
+
+.middle {
+	display: table-cell; 
+	vertical-align: middle;
+}
+
+.row {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 0 175px 0;
+	margin-top: -90px;
+	text-align: center;
+}
+
+header {
+	text-align: center;
+	margin: 0 0 50px 0;
+}
+
+footer {
+	text-align: center;
+	font-size: 13px;
+	color: #999;
+	padding: 20px 0 20px 0;
+	width: 100%;
+	position: fixed;
+    bottom: 0;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+form {
+	font-size: 15px;
+}
+
+input[type="text"]::-webkit-input-placeholder
+input[type="text"]::-moz-input-placeholder
+input[type="text"]:-moz-input-placeholder
+input[type="text"]:-ms-input-placeholder {
+   color: #d9d9d9;
+}
+
+input[type="text"] {
+	width: 186px;
+	height: 30px;
+	border-bottom: 2px dashed #e9e9e9;
+	padding: 1px 25px 5px 10px;
+	float: center;
+	color: #545454;
+}
+
+select {
+    text-align: center;
+}
+
+button[type="submit"] {
+	height: 40px;
+	width: 75px;
+	font-weight: 500;
+	font-size: 14px;
+	border: 2px solid #54c562;
+	background-color: #fff;
+	color: #54c562;
+	cursor: pointer;
+	border-radius: 3px;
+	padding: 0 10px 0 10px;
+	margin-left: 15px;
+	letter-spacing: 1px;
+	float: center;
+}
+
+::-webkit-input-placeholder
+:-moz-placeholder
+::-moz-placeholder 
+:-ms-input-placeholder {
+   color: #afb2b4;
+}
+
+button[type="submit"]:hover {
+	background-color: #54c562;
+	border: 2px solid #54c562;
+	color: #fff;
+}
+
+button[type="submit"]:active {
+	background-color: #54c562;
+	border: 2px solid #54c562;
+	color: #fff;
+}
+
